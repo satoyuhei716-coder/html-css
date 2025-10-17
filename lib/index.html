@@ -7,12 +7,41 @@
 </head>
 <body>
     
-   <ol>
-    <li>hoge</li>
-    <li>fuga</li>
-    <li>Fizz</li>
-    <li>buss</li>
-   </ol>
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <label for="nameField">名前：</label><input id="nameField" type="text" name="name"><br>
+    <label>パスワード：<input type="password" name="pass"></label>
+    性別：<input type="radio" name="gender" value="male" checked>男
+    <input type="radio" name="gender" value="female">女<br>
+    好きなトライアスロン競技：<input type="checkbox" name="triathlon" value="swim" checked>水泳<br>
+    <input type="checkbox" name="triathlon" value="bike" checked>自転車<br>
+    <input type="checkbox" name="triathlon" value="run" checked>走る<br>
+    ファイル選択：<input type="file" name="resume"><br>
+    <input type="hidden" name="employeeld" value="12345">
+    <textarea name="remaks" row="5" cols="50">フリー入力</textarea><br>
+    趣味：
+
+    <select name="hobby">
+        <option value="swim" selected>水泳</option>
+        <option value="bike">自転車</option>
+        <option value="run">走る</option>
+    </select><br>
+
+    誕生日：<input type="date" name="birthday"><br>
+    <button>送信</button>
+    <button type="reset">リセット</button>
+    <button type="button">ただのボタン</button>
+
+
+                              
+
+
+
+
+
+
+
+  </form>
 
 </body>
 </html>
